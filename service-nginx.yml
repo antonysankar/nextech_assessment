@@ -6,9 +6,6 @@ metadata:
   name: nginx
   namespace: default
 spec:
-  clusterIP: 10.107.1.185
-  clusterIPs:
-  - 10.107.1.185
   externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
