@@ -5,8 +5,8 @@ pipeline {
 		stage ('Kube Cleanup') {
 			steps {
 				echo "Cleaning up existing pod and service resources....."
-				/usr/local/bin/kubectl delete -f /var/lib/jenkins/workspace/gitPull/deployment-nginx.yml 2>/dev/null || \
-				/usr/local/bin/kubectl delete -f /var/lib/jenkins/workspace/gitPull/service-nginx.yml 2>/dev/null
+				/usr/local/bin/kubectl delete -f /var/lib/jenkins/workspace/gitPull/deployment-nginx.yml || \
+				/usr/local/bin/kubectl delete -f /var/lib/jenkins/workspace/gitPull/service-nginx.yml
 			}
 		}
 		
