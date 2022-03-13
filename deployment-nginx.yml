@@ -1,14 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: "2022-03-13T07:35:05Z"
-  generation: 1
   labels:
     app: nginx
   name: nginx
   namespace: default
-  resourceVersion: "6192"
-  uid: e4ccbbc2-05df-4bfc-a5d1-ad810de0878b
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
